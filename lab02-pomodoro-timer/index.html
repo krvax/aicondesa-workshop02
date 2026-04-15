@@ -19,6 +19,24 @@
       <span class="session-label">Session <span id="sessionCount">1</span></span>
     </header>
 
+    <!-- Timer Illustration -->
+    <div class="timer-illustration">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 100" width="80" height="100" fill="none">
+        <!-- Hourglass frame -->
+        <path d="M15 8 h50 l-30 38 l30 38 h-50 l30 -38 Z" stroke="#7d9e7e" stroke-width="3.5" stroke-linejoin="round" fill="rgba(125,158,126,0.08)"/>
+        <!-- Top sand -->
+        <path d="M20 14 h40 l-20 24 Z" fill="rgba(196,168,130,0.55)"/>
+        <!-- Bottom sand (flowing and settled) -->
+        <ellipse cx="40" cy="83" rx="18" ry="6" fill="rgba(196,168,130,0.6)"/>
+        <!-- Falling sand particle -->
+        <line x1="40" y1="46" x2="40" y2="68" stroke="rgba(196,168,130,0.7)" stroke-width="2" stroke-linecap="round"/>
+        <!-- Top bar -->
+        <rect x="12" y="5" width="56" height="6" rx="3" fill="#7d9e7e"/>
+        <!-- Bottom bar -->
+        <rect x="12" y="89" width="56" height="6" rx="3" fill="#7d9e7e"/>
+      </svg>
+    </div>
+
     <!-- Mode Tabs -->
     <nav class="mode-tabs" role="tablist">
       <button class="tab active" id="tab-focus" onclick="switchMode('focus')" role="tab">Focus</button>

@@ -44,6 +44,22 @@ body {
     radial-gradient(ellipse 50% 60% at 80% 70%, rgba(184, 143, 160, 0.15) 0%, transparent 70%);
 }
 
+/* Timer Illustration */
+.timer-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.88;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 4px 12px rgba(125, 158, 126, 0.25));
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
+}
+
+
 /* ===================================================
    APP LAYOUT
    =================================================== */
