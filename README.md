@@ -21,7 +21,7 @@ A hands-on workshop series exploring modern web development, cloud deployment, a
 | Lab | URL |
 |-----|-----|
 | Lab 01 — Conference Site | [conference-site-383578626035.us-central1.run.app](https://conference-site-383578626035.us-central1.run.app) |
-| Lab 02 — Pomodoro Timer | _próximamente_ |
+| Lab 02 — Pomodoro Timer | [pomodoro-timer-383578626035.us-central1.run.app](https://pomodoro-timer-383578626035.us-central1.run.app) |
 
 ---
 
