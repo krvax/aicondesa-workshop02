@@ -12,7 +12,7 @@ A hands-on workshop series exploring modern web development, cloud deployment, a
 | Lab | Tema | Tecnologías | Estado |
 |-----|------|-------------|--------|
 | [Lab 01](./lab01-conference-site/) | Conference Site | Python, Flask, Cloud Run | ✅ Live |
-| [Lab 02](./lab02-pomodoro-timer/) | Pomodoro Timer | HTML, CSS, JS | 🔨 En construcción |
+| [Lab 02](./lab02-pomodoro-timer/) | Pomodoro Timer | HTML, CSS, JS, Nginx | ✅ Live |
 
 ---
 
