@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ info.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>{{ info.title }}</h1>
+            <p class="description">{{ info.description }}</p>
+            <div class="meta-badges">
+                <span class="badge">📅 {{ info.date }}</span>
+                <span class="badge">📍 {{ info.location }}</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search by talk title, speaker, or category (e.g. AI, Serverless)...">
+    </div>
+
+    <main class="schedule-container" id="schedule">
+        {% for talk in talks %}
+            {% if loop.index == 4 %}
+                <div class="break-item">
+                    🍱 LUNCH BREAK (60 MINS)
+                </div>
+            {% endif %}
+            
+            <div class="timetable-item" data-title="{{ talk.title|lower }}" data-speakers="{{ talk.speaker_objs|map(attribute='first_name')|join(' ')|lower }} {{ talk.speaker_objs|map(attribute='last_name')|join(' ')|lower }}" data-categories="{{ talk.categories|join(' ')|lower }}">
+                <div class="time">{{ talk.time }}</div>
+                <div class="talk-content">
+                    <div class="categories">
+                        {% for cat in talk.categories %}
+                            <span class="cat-tag">{{ cat }}</span>
+                        {% endfor %}
+                    </div>
+                    <h3>{{ talk.title }}</h3>
+                    <p class="description">{{ talk.description }}</p>
+                    <div class="speakers">
+                        {% for speaker in talk.speaker_objs %}
+                            <a href="{{ speaker.linkedin }}" target="_blank" class="speaker-link">
+                                🔗 {{ speaker.first_name }} {{ speaker.last_name }}
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </main>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
