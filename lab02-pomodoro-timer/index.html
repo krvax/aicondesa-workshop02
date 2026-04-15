@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro — Focus & Rest</title>
+  <meta name="description" content="A calm and aesthetic Pomodoro productivity timer to help you focus and rest."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="ambient"></div>
+
+  <main class="app">
+    <!-- Header -->
+    <header class="app-header">
+      <span class="logo">🍅 pomodoro</span>
+      <span class="session-label">Session <span id="sessionCount">1</span></span>
+    </header>
+
+    <!-- Mode Tabs -->
+    <nav class="mode-tabs" role="tablist">
+      <button class="tab active" id="tab-focus" onclick="switchMode('focus')" role="tab">Focus</button>
+      <button class="tab" id="tab-short" onclick="switchMode('short')" role="tab">Short Break</button>
+      <button class="tab" id="tab-long" onclick="switchMode('long')" role="tab">Long Break</button>
+    </nav>
+
+    <!-- Timer Ring -->
+    <div class="timer-card">
+      <div class="ring-wrapper">
+        <svg class="ring" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+          <circle class="ring-track" cx="110" cy="110" r="96"/>
+          <circle class="ring-progress" id="ringProgress" cx="110" cy="110" r="96"/>
+        </svg>
+        <div class="timer-center">
+          <div class="time-display" id="timeDisplay">25:00</div>
+          <div class="mode-label" id="modeLabel">Time to focus</div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button class="btn btn-secondary" id="resetBtn" onclick="resetTimer()" title="Reset">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+            <path d="M3 3v5h5"/>
+          </svg>
+        </button>
+        <button class="btn btn-primary" id="startBtn" onclick="toggleTimer()">
+          <span id="btnLabel">Start</span>
+        </button>
+        <button class="btn btn-secondary" id="skipBtn" onclick="skipSession()" title="Skip">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Session dots -->
+      <div class="session-dots" id="sessionDots">
+        <span class="dot active" id="dot-0"></span>
+        <span class="dot" id="dot-1"></span>
+        <span class="dot" id="dot-2"></span>
+        <span class="dot" id="dot-3"></span>
+      </div>
+      <p class="sessions-info">4 pomodoros = 1 long break</p>
+    </div>
+
+    <!-- Quote -->
+    <p class="quote" id="quoteText">"The secret of getting ahead is getting started."</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
