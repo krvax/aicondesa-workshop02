@@ -21,6 +21,15 @@ Inmersión profunda en el ecosistema de agentes inteligentes y razonamiento auto
 
 ---
 
+## 💎 Proyectos Personales
+
+### 🚀 [Personal Website](./projects/personal-site/)
+Sitio web profesional de Miguel Angel Carvajal, evolucionado a partir de las arquitecturas de los talleres.
+- **Estado**: `🚧 In Development`
+- **Stack**: Flask, Python, Google Cloud Run.
+
+---
+
 ## 🛠️ Stack Tecnológico Global
 
 | Categoría | Tecnologías |
