@@ -31,6 +31,14 @@ Utilizaremos el modelo de diccionarios de Flask para manejar:
 
 ---
 
+## 🗺️ Roadmap / Próximos Pasos
+- [ ] **GitHub Actions (CI/CD)**: Automatizar el despliegue a Cloud Run al hacer push a `main`.
+- [ ] **Custom Domain**: Configurar un dominio personalizado (ej. `miguel.coatl.tech`).
+- [ ] **Analytics**: Integrar Google Analytics para medir visitas.
+- [ ] **Blog Section**: Espacio para escribir sobre tus aprendizajes en AI Club Condesa.
+
+---
+
 ## 💡 Notas Técnicas
 
 ### ¿Por qué usamos `venv`?
