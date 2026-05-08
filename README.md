@@ -11,9 +11,9 @@ A hands-on workshop series exploring modern web development, cloud deployment, a
 
 | Lab | Tema | Tecnologías | Estado |
 |-----|------|-------------|--------|
-| [Lab 01](./w2/lab01-conference-site/) | Conference Site | Python, Flask, Cloud Run | ✅ Live |
-| [Lab 02](./w2/lab02-pomodoro-timer/) | Pomodoro Timer | HTML, CSS, JS, Nginx | ✅ Live |
-| [Lab 03 (W6)](./w6/lab01-gemini-agents/) | Gemini Agents | Discovery Engine, Agent Registry | 🚧 In Progress |
+| [Lab 01 (W2)](./w2/lab01-conference-site/) | Conference Site | Python, Flask, Cloud Run | ✅ Live |
+| [Lab 02 (W2)](./w2/lab02-pomodoro-timer/) | Pomodoro Timer | HTML, CSS, JS, Nginx | ✅ Live |
+| [Lab 01 (W6)](./w6/lab01-gemini-agents/) | Gemini Agents | Discovery Engine, Agent Registry | ✅ Live |
 
 ---
 
@@ -21,8 +21,9 @@ A hands-on workshop series exploring modern web development, cloud deployment, a
 
 | Lab | URL |
 |-----|-----|
-| Lab 01 — Conference Site | [conference-site-383578626035.us-central1.run.app](https://conference-site-383578626035.us-central1.run.app) |
-| Lab 02 — Pomodoro Timer | [pomodoro-timer-383578626035.us-central1.run.app](https://pomodoro-timer-383578626035.us-central1.run.app) |
+| Lab 01 (W2) — Conference Site | [conference-site-383578626035.us-central1.run.app](https://conference-site-383578626035.us-central1.run.app) |
+| Lab 02 (W2) — Pomodoro Timer | [pomodoro-timer-383578626035.us-central1.run.app](https://pomodoro-timer-383578626035.us-central1.run.app) |
+| Lab 01 (W6) — Gemini Agent | [Gemini Enterprise Preview](https://console.cloud.google.com/gemini-enterprise/) |
 
 ---
 
