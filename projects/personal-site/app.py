@@ -49,7 +49,7 @@ SKILLS = {
 
 @app.route('/')
 def home():
-    return render_template('index.html', profile=USER_PROFILE, projects=PROJECTS, skills=SKILLS)
+    return render_template('index.html', profile=USER_PROFILE, projects=PROJECTS, skills=SKILLS, datetime=datetime)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8080)
