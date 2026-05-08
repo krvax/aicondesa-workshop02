@@ -17,6 +17,7 @@ Enfoque en el despliegue de aplicaciones web modernas utilizando contenedores y 
 Inmersión profunda en el ecosistema de agentes inteligentes y razonamiento automático.
 - **Proyectos**: Agente Cóatl Finanzas.
 - **Core**: Vertex AI Agent Platform, Gemini Enterprise, Reasoning Engines.
+- **Presentación**: [Slides del Workshop 06](https://docs.google.com/presentation/d/15W6lIry-9QlNmxoaFGWVHmyJsUk78GmZW9rM6UdlJzk/edit?slide=id.g3df5dae373c_0_19#slide=id.g3df5dae373c_0_19)
 
 ---
 
