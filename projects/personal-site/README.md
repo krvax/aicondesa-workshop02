@@ -35,6 +35,16 @@ En este proyecto utilizamos un **Entorno Virtual (`venv`)** por las siguientes r
 - **Seguridad**: Permite instalar paquetes sin necesidad de permisos de administrador y sin riesgo de afectar el sistema operativo.
 
 ### Comandos Útiles
+
+#### 1. Configurar Permisos (Solo la primera vez)
+Si PowerShell bloquea la activación, ejecuta esto:
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+#### 2. Ciclo de Trabajo
 - **Crear entorno**: `python -m venv venv`
-- **Activar (Windows)**: `.\venv\Scripts\activate`
+- **Activar (PowerShell)**: `.\venv\Scripts\Activate.ps1`
+- **Activar (CMD)**: `.\venv\Scripts\activate`
 - **Instalar dependencias**: `pip install -r requirements.txt`
+- **Ejecutar Local**: `python app.py`
