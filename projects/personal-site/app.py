@@ -6,8 +6,8 @@ app = Flask(__name__)
 # Configuración del Perfil Personal
 USER_PROFILE = {
     "name": "Miguel Angel Carvajal R",
-    "title": "Cloud Architect & AI Engineer",
-    "bio": "Apasionado por la intersección entre la Inteligencia Artificial y la arquitectura de nube. Liderando la innovación en AI Club Condesa.",
+    "title": "Alumno @ GDG AI Club Condesa",
+    "bio": "Apasionado por la intersección entre la Inteligencia Artificial y la arquitectura de nube. Aprendiendo y colaborando en el ecosistema de IA del GDG AI Club Condesa.",
     "location": "Ciudad de México",
     "email": "miguel@coatl.tech",
     "social": {
