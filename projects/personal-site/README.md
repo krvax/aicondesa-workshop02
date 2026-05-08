@@ -2,6 +2,11 @@
 
 Este proyecto tiene como objetivo crear una presencia digital profesional utilizando el stack tecnológico aprendido en el **Workshop 02 (Flask + Cloud Run)**, con un enfoque en diseño de alta gama y personalización profunda.
 
+## 🛠️ Estado Actual: `✅ Live`
+
+Sitio desplegado exitosamente en Google Cloud Run.
+**URL**: [https://personal-site-383578626035.us-central1.run.app](https://personal-site-383578626035.us-central1.run.app)
+
 ## 📋 Plan de Implementación
 
 ### 1. Concepto y Diseño

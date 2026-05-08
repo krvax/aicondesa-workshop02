@@ -25,7 +25,8 @@ Inmersión profunda en el ecosistema de agentes inteligentes y razonamiento auto
 
 ### 🚀 [Personal Website](./projects/personal-site/)
 Sitio web profesional de Miguel Angel Carvajal, evolucionado a partir de las arquitecturas de los talleres.
-- **Estado**: `🚧 In Development`
+- **Estado**: `✅ Live`
+- **URL**: [https://personal-site-383578626035.us-central1.run.app](https://personal-site-383578626035.us-central1.run.app)
 - **Stack**: Flask, Python, Google Cloud Run.
 
 ---
