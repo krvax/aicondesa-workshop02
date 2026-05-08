@@ -26,6 +26,15 @@ Utilizaremos el modelo de diccionarios de Flask para manejar:
 
 ---
 
-## 🛠️ Estado Actual: `🚧 In Development`
+## 💡 Notas Técnicas
 
-> *"Construyendo el futuro de la IA, un bit a la vez."*
+### ¿Por qué usamos `venv`?
+En este proyecto utilizamos un **Entorno Virtual (`venv`)** por las siguientes razones:
+- **Aislamiento**: Evita conflictos entre las librerías de este sitio y otros proyectos de Python en tu sistema.
+- **Reproducibilidad**: Facilita que otros desarrolladores instalen exactamente las mismas versiones de las dependencias.
+- **Seguridad**: Permite instalar paquetes sin necesidad de permisos de administrador y sin riesgo de afectar el sistema operativo.
+
+### Comandos Útiles
+- **Crear entorno**: `python -m venv venv`
+- **Activar (Windows)**: `.\venv\Scripts\activate`
+- **Instalar dependencias**: `pip install -r requirements.txt`
