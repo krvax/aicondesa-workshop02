@@ -13,6 +13,7 @@ A hands-on workshop series exploring modern web development, cloud deployment, a
 |-----|------|-------------|--------|
 | [Lab 01](./lab01-conference-site/) | Conference Site | Python, Flask, Cloud Run | ✅ Live |
 | [Lab 02](./lab02-pomodoro-timer/) | Pomodoro Timer | HTML, CSS, JS, Nginx | ✅ Live |
+| [Lab 03 (W6)](./workshop6/lab01-gemini-agents/) | Gemini Agents | Discovery Engine, Agent Registry | 🚧 In Progress |
 
 ---
 
@@ -41,6 +42,14 @@ A hands-on workshop series exploring modern web development, cloud deployment, a
 - Docker
 - gcloud CLI autenticado
 - Cuenta de Google Cloud con billing habilitado
+
+---
+
+## 📚 Referencias
+
+- [Building with Google Antigravity](https://codelabs.developers.google.com/building-with-google-antigravity) — Google Codelabs
+- [Build and Deploy on GCP with Antigravity](https://codelabs.developers.google.com/build-and-deploy-gcp-with-antigravity) — Google Codelabs
+- [Snapchat Data Tech Stack](https://www.junaideffendi.com/p/snapchat-data-tech-stack) — Junaid Effendi
 
 ---
 
