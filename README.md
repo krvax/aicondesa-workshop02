@@ -1,4 +1,4 @@
-# Workshop 02 — AI Club Condesa
+# AI Club Condesa — Workshops
 
 > **Google Cloud Technologies & Web Development**
 > *México City, April 2026*
@@ -11,9 +11,9 @@ A hands-on workshop series exploring modern web development, cloud deployment, a
 
 | Lab | Tema | Tecnologías | Estado |
 |-----|------|-------------|--------|
-| [Lab 01](./lab01-conference-site/) | Conference Site | Python, Flask, Cloud Run | ✅ Live |
-| [Lab 02](./lab02-pomodoro-timer/) | Pomodoro Timer | HTML, CSS, JS, Nginx | ✅ Live |
-| [Lab 03 (W6)](./workshop6/lab01-gemini-agents/) | Gemini Agents | Discovery Engine, Agent Registry | 🚧 In Progress |
+| [Lab 01](./w2/lab01-conference-site/) | Conference Site | Python, Flask, Cloud Run | ✅ Live |
+| [Lab 02](./w2/lab02-pomodoro-timer/) | Pomodoro Timer | HTML, CSS, JS, Nginx | ✅ Live |
+| [Lab 03 (W6)](./w6/lab01-gemini-agents/) | Gemini Agents | Discovery Engine, Agent Registry | 🚧 In Progress |
 
 ---
 
