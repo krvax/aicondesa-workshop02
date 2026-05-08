@@ -1,59 +1,47 @@
-# AI Club Condesa — Workshops
+# 🌌 AI Club Condesa — Learning Journey
 
-> **Google Cloud Technologies & Web Development**
-> *México City, April 2026*
-
-A hands-on workshop series exploring modern web development, cloud deployment, and GCP services.
+Bienvenido al repositorio central de aprendizaje de **AI Club Condesa**. Este espacio está dedicado a la exploración, implementación y despliegue de soluciones de Inteligencia Artificial y Tecnologías Cloud de última generación.
 
 ---
 
-## 🗂️ Labs
+## 🏗️ Estructura del Proyecto
 
-| Lab | Tema | Tecnologías | Estado |
-|-----|------|-------------|--------|
-| [Lab 01 (W2)](./w2/lab01-conference-site/) | Conference Site | Python, Flask, Cloud Run | ✅ Live |
-| [Lab 02 (W2)](./w2/lab02-pomodoro-timer/) | Pomodoro Timer | HTML, CSS, JS, Nginx | ✅ Live |
-| [Lab 01 (W6)](./w6/lab01-gemini-agents/) | Gemini Agents | Discovery Engine, Agent Registry | ✅ Live |
+Este repositorio está organizado por **Workshops**, cada uno enfocado en habilidades específicas del stack moderno de IA y Cloud:
 
----
+### 📗 [Workshop 02: Fundamentos de Cloud & Web](./workshops/)
+Enfoque en el despliegue de aplicaciones web modernas utilizando contenedores y arquitecturas escalables.
+- **Proyectos**: Conference Site (Flask), Pomodoro Timer (JS/Nginx).
+- **Core**: Docker, Google Cloud Run.
 
-## 🌐 Deploys en Producción
-
-| Lab | URL |
-|-----|-----|
-| Lab 01 (W2) — Conference Site | [conference-site-383578626035.us-central1.run.app](https://conference-site-383578626035.us-central1.run.app) |
-| Lab 02 (W2) — Pomodoro Timer | [pomodoro-timer-383578626035.us-central1.run.app](https://pomodoro-timer-383578626035.us-central1.run.app) |
-| Lab 01 (W6) — Gemini Agent | [Gemini Enterprise Preview](https://console.cloud.google.com/gemini-enterprise/) |
+### 📘 [Workshop 06: Agentes de IA Enterprise](./workshops/w6/lab01-gemini-agents/)
+Inmersión profunda en el ecosistema de agentes inteligentes y razonamiento automático.
+- **Proyectos**: Agente Cóatl Finanzas.
+- **Core**: Vertex AI Agent Platform, Gemini Enterprise, Reasoning Engines.
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Stack Tecnológico Global
 
-- **Backend**: Python / Flask
-- **Frontend**: HTML5, CSS3 (Vanilla), JavaScript (Vanilla)
-- **Containerización**: Docker
-- **Cloud**: Google Cloud Run, Artifact Registry, Cloud Build
-- **CI/CD**: Git + gcloud CLI
-
----
-
-## 📋 Requisitos Previos
-
-- Python 3.9+
-- Docker
-- gcloud CLI autenticado
-- Cuenta de Google Cloud con billing habilitado
+| Categoría | Tecnologías |
+|-----------|-------------|
+| **AI / ML** | Gemini 1.5 Pro/Flash, Vertex AI, Agent Engine |
+| **Cloud** | Google Cloud Platform (GCP), Cloud Run, Artifact Registry |
+| **Backend** | Python, Flask, Node.js |
+| **Infraestructura** | Docker, Terraform, Git, gcloud CLI |
 
 ---
 
-## 📚 Referencias
+## 🚀 Cómo Empezar
 
-- [Building with Google Antigravity](https://codelabs.developers.google.com/building-with-google-antigravity) — Google Codelabs
-- [Build and Deploy on GCP with Antigravity](https://codelabs.developers.google.com/build-and-deploy-gcp-with-antigravity) — Google Codelabs
-- [Snapchat Data Tech Stack](https://www.junaideffendi.com/p/snapchat-data-tech-stack) — Junaid Effendi
+1.  **Explora los Workshops**: Navega a la carpeta de tu interés para encontrar guías detalladas de implementación.
+2.  **Sigue las Guías de Supervivencia**: Cada laboratorio incluye una guía para superar obstáculos comunes en entornos de producción.
+3.  **Despliega**: Usa los comandos `make` incluidos para ver tus agentes y apps en vivo.
 
 ---
 
-## 👨‍💻 Autor
+## 🙏 Agradecimientos
 
-**Miguel Angel Carvajal R** — [@krvax](https://github.com/krvax) | Cóatl Tech
+Agradecimiento especial a la comunidad de **AI Condesa** por fomentar este espacio de innovación y aprendizaje compartido en la Ciudad de México. 🇲🇽✨
+
+---
+> *Creado por Miguel Angel Carvajal R — [@krvax](https://github.com/krvax)*
