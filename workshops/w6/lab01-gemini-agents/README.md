@@ -152,6 +152,42 @@ El agente se registró exitosamente y ya es funcional en la Web App de Gemini En
 
 ---
 
+## 🌐 Cómo Acceder y Compartir el Agente
+
+Tras las pruebas en vivo, confirmamos que el URL de acceso para una instancia corporativa sigue este patrón:
+
+`https://vertexaisearch.cloud.google.com/home/cid/<CUSTOMER_ID>/r/agent/<AGENT_ID>`
+
+*   **Tu Agent ID**: `8544371628222189320`
+*   **Tu Customer ID (CID)**: `947f744a-0690-499b-82a5-22d91d67b103`
+
+---
+
+## 🚀 Siguientes Pasos: ¿Cómo hacerlo 100% Público?
+
+Actualmente, el link directo requiere que el usuario esté logueado en la consola. Para que sea accesible para cualquier visitante de tu sitio personal (sin login), la estrategia recomendada es:
+
+1.  **Configurar Integración**: En la consola de GCP, ve a **Integración > Widget de Chat**.
+2.  **Habilitar Acceso No Autenticado**: Activa la opción para que el widget sea público.
+3.  **Embeber en HTML**: Copia el código `<script>` generado y pégalo en el `index.html` de tu `personal-site`.
+4.  **Whitelist**: Asegúrate de añadir el dominio `personal-site-383578626035.us-central1.run.app` a la lista de dominios permitidos en la configuración de seguridad del agente.
+
+---
+
+## ⚠️ Consideraciones de Acceso Público
+
+¿Sería una locura hacerlo público? Aquí un análisis rápido para decidir:
+
+| Aspecto | Consideración | Riesgo |
+| :--- | :--- | :--- |
+| **Costos** 💰 | Gemini Enterprise consume créditos/dinero por sesión. Un agente público sin control puede agotar tu presupuesto. | **Alto** |
+| **Seguridad** 🔒 | El agente tiene acceso a tu System Prompt y posibles herramientas (Tools). | **Medio** |
+| **Identidad** 🆔 | Por defecto, requiere cuenta de Google. Abrirlo a "cualquiera" requiere desactivar IAP o usar un Widget externo. | **Bajo** |
+
+**Recomendación**: Mantén el acceso restringido a cuentas autorizadas (vía Google Identity) mientras esté en fase de prueba. Si deseas hacerlo público, considera implementar cuotas de uso (quotas) en GCP.
+
+---
+
 ## 📚 Recursos y Referencias
 
 Para profundizar en la ingeniería de agentes y el ecosistema de IA:

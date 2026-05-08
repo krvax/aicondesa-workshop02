@@ -31,7 +31,7 @@ PROJECTS = [
         "title": "Agente Cóatl Finanzas",
         "category": "AI & Agents",
         "description": "Agente de razonamiento avanzado desplegado en Vertex AI para análisis de mercados financieros.",
-        "link": "https://github.com/krvax/AI-Club-Condesa-Workshops/tree/main/workshops/w6/lab01-gemini-agents"
+        "link": "https://vertexaisearch.cloud.google.com/home/cid/947f744a-0690-499b-82a5-22d91d67b103/r/agent/8544371628222189320"
     },
     {
         "id": 2,
