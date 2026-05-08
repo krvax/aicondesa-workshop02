@@ -11,10 +11,10 @@ USER_PROFILE = {
     "location": "Ciudad de México",
     "email": "miguel@coatl.tech",
     "social": {
-        "linkedin": "https://linkedin.com/in/krvax",
+        "linkedin": "https://www.linkedin.com/in/miguel-carvajal",
         "github": "https://github.com/krvax",
         "twitter": "https://twitter.com/krvax",
-        "resume": "https://github.com/krvax/epam-aws-devops-prep/tree/main/resume"
+        "resume": "https://github.com/krvax/epam-aws-devops-prep/tree/main/MACR/resume"
     }
 }
 
