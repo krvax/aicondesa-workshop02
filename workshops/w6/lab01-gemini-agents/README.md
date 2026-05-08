@@ -125,16 +125,30 @@ Utiliza estos parámetros para personalizar tu agente una vez desplegado:
 
 ---
 
-## ✨ Resumen de Logros del Taller (AI Club Condesa)
+## 🏆 Guía de Supervivencia y Éxito (Workshop 06)
 
-¡Este laboratorio fue un éxito rotundo! A pesar de los desafíos técnicos típicos de un entorno real, logramos:
+Este documento resume la jornada técnica para desplegar el **Agente Cóatl Finanzas**, superando obstáculos de configuración y facturación en Google Cloud.
 
-1.  **Reactivación de Facturación**: Identificamos y resolvimos un cierre de cuenta de facturación en tiempo real, vinculando una nueva cuenta de prueba para salvar el proyecto.
-2.  **Implementación de Agente Engine**: Desplegamos un "Cerebro" (Reasoning Engine) personalizado en Vertex AI con 4 CPUs y 8GB de RAM.
-3.  **Registro en Gemini Enterprise**: Integramos con éxito el agente en la aplicación web corporativa, permitiendo su uso inmediato por usuarios finales.
-4.  **Validación de IA**: El agente respondió con éxito a consultas complejas sobre Bitcoin y el mercado financiero mexicano, utilizando orquestación de sub-agentes.
+### 🏗️ 1. El Desafío: El "Muro" de la Organización
+Al intentar usar el **Agent Designer (No-Code)** de Gemini Enterprise, nos encontramos con un bloqueo: el sistema exige una Identidad de Organización configurada.
+- **Síntoma**: El chat de creación de agentes no activaba el editor visual.
 
-**¡Misión Cumplida!** El Agente Cóatl Finanzas ya es una realidad. 🏁🐍🔥🚀
+### 🛠️ 2. La Solución: El Camino "Pro-Code"
+Usamos la **Plataforma de Agentes de Vertex AI** y el **Agent Starter Pack** de Google desde la **Cloud Shell** para saltar las restricciones de la interfaz.
+
+**Comando Maestro:**
+```bash
+export AGENT_NAME=coatl-finanzas-${RANDOM}
+uvx agent-starter-pack==0.15.4 create ${AGENT_NAME} -d agent_engine -ag -a adk@financial-advisor
+cd ${AGENT_NAME} && make install && make backend && make register-gemini-enterprise
+```
+
+### 🚀 3. El Resultado Final
+El agente se registró exitosamente y ya es funcional en la Web App de Gemini Enterprise.
+- **ID del Agente**: `8544371628222189320`
+- **Capacidad**: Análisis financiero profesional y orquestación de sub-agentes.
+
+**¡Misión Cumplida!** 🐍🔥🚀
 
 ---
 
