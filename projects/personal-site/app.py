@@ -13,13 +13,21 @@ USER_PROFILE = {
     "social": {
         "linkedin": "https://linkedin.com/in/krvax",
         "github": "https://github.com/krvax",
-        "twitter": "https://twitter.com/krvax"
+        "twitter": "https://twitter.com/krvax",
+        "resume": "https://github.com/krvax/epam-aws-devops-prep/tree/main/resume"
     }
 }
 
 PROJECTS = [
     {
         "id": 1,
+        "title": "EPAM AWS DevOps Prep",
+        "category": "Cloud & DevOps",
+        "description": "Repositorio de preparación intensiva para roles de DevOps en AWS, incluyendo arquitecturas y automatización.",
+        "link": "https://github.com/krvax/epam-aws-devops-prep"
+    },
+    {
+        "id": 2,
         "title": "Agente Cóatl Finanzas",
         "category": "AI & Agents",
         "description": "Agente de razonamiento avanzado desplegado en Vertex AI para análisis de mercados financieros.",
