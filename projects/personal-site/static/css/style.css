@@ -149,6 +149,27 @@ body {
     background: rgba(129, 140, 248, 0.1) !important;
 }
 
+.lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid var(--glass-border) !important;
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary) !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    padding: 0.3rem 0.6rem !important;
+    margin-left: 0.5rem;
+    transition: all var(--transition);
+}
+
+.lang-toggle:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--text-muted) !important;
+}
+
 /* ── Hamburger Menu ──────────────────────────────────────────────── */
 .hamburger {
     display: none;
