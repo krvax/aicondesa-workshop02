@@ -1,0 +1,56 @@
+name: Deploy Personal Site to Cloud Run
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'projects/personal-site/**'
+  workflow_dispatch:  # Manual trigger
+
+env:
+  PROJECT_ID: mx-coatl-aicondesa-workshop02
+  REGION: us-central1
+  SERVICE: personal-site
+
+jobs:
+  deploy:
+    name: Build & Deploy to Cloud Run
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write   # Required for Workload Identity Federation
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud (OIDC)
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: >-
+            projects/383578626035/locations/global/workloadIdentityPools/github-pool/providers/github-provider
+          service_account: github-deploy@mx-coatl-aicondesa-workshop02.iam.gserviceaccount.com
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Deploy to Cloud Run (from source)
+        run: |
+          gcloud run deploy $SERVICE \
+            --source ./projects/personal-site \
+            --region $REGION \
+            --allow-unauthenticated \
+            --port 8080 \
+            --project $PROJECT_ID \
+            --quiet
+
+      - name: Show service URL
+        run: |
+          URL=$(gcloud run services describe $SERVICE \
+            --region $REGION \
+            --project $PROJECT_ID \
+            --format='value(status.url)')
+          echo "🚀 Deployed to: $URL"
+          echo "## 🚀 Deployed Successfully" >> $GITHUB_STEP_SUMMARY
+          echo "**URL**: $URL" >> $GITHUB_STEP_SUMMARY
