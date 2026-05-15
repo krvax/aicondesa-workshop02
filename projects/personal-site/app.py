@@ -12,11 +12,10 @@ USER_PROFILE = {
            "Especializado en plataformas AI/LLM en producción (AWS Bedrock, EKS), "
            "SRE, CI/CD y automatización de infraestructura.",
     "location": "Ciudad de México",
-    "email": "miguel@coatl.tech",
+    "email": "krva@ciencias.unam.mx",
     "social": {
         "linkedin": "https://www.linkedin.com/in/miguel-carvajal",
         "github": "https://github.com/krvax",
-        "twitter": "https://twitter.com/krvax",
     }
 }
 
